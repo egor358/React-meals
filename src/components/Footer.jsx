@@ -18,9 +18,10 @@ function Footer() {
         </div>
         <div className="contact">
         <h1>Contact</h1>
-        <h3>0800999779<br/>
-        telegram:@Juve<br/>
-        instagram:juventino
+        <h3>
+          <a href="tel:0800999779">0800999779</a>
+        <span>telegram:@Juve</span>
+        <span>instagram:juventino</span>
         </h3>
      </div>
       <div className="icon">

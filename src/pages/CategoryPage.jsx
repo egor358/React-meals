@@ -27,7 +27,7 @@ const CategoryPage = () => {
 
   return (
     <>
-      <Button />
+      {/* <Button /> */}
       {loading ? <Preloader /> : <ProductList products={products} />}
     </>
   );

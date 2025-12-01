@@ -26,7 +26,7 @@ const Recept = () => {
       <h3>{recept.strInstructions}</h3>
       {recept.strYoutube && (
         <iframe
-          width="560"
+          width="860"
           height="315"
           src={`https://www.youtube.com/embed/${recept.strYoutube.slice(
             recept.strYoutube.indexOf("v=") + 2

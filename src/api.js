@@ -30,7 +30,17 @@ const getMileById = async (id)=>{
     `Ошибка по адресу ${response.url}, статус ошибки ${response.status}`
   );
 }
+const getRandomButton = async ()=> {
+   const response = await fetch(API_URL + `random.php`)
+     if (response.ok) {
+    return await response.json();
+  }
+  throw new Error(
+    `Ошибка по адресу ${response.url}, статус ошибки ${response.status}`
+  );
+
+}
 
 
 
-export {getAllCategories,getCategorysByName,getMileById}
+export {getAllCategories,getCategorysByName,getMileById,getRandomButton}

@@ -4,6 +4,30 @@
   padding: 0;
   text-align: center;
 } */
+ .recept{
+   position: relative;
+  width: 860px;
+  height: 500px;
+ }
+ .recept img{
+  width: 760px;
+  height: 500px;
+ }
+ .btn-random{
+  background-color: aqua;
+  border-radius: 10px;
+  width: 80px;
+  height: 30px;
+  font-size: 17px;
+ position: absolute;  
+  top: 136px;          
+  left: 210px; 
+  
+ }
+ .btn-random:hover{
+  color: white;
+ }
+
 
 .logo {
   height: 6em;
