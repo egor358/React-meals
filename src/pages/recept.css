@@ -1,12 +1,19 @@
-.recept{
-    color: white;
+.recept {
+  color: #fff;
+  position: relative;
+  width: 100%;
 }
 .recept h1 {
-  font-size: 25px;   
+  font-size: 25px;
 }
 .recept h2 {
-  font-size: 20px;  
+  font-size: 20px;
 }
 .recept h3 {
-  font-size: 15px;   
+  font-size: 15px;
+}
+
+.recept img {
+  width: 760px;
+  height: 500px;
 }

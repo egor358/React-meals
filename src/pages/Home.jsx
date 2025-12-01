@@ -1,9 +1,9 @@
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-import { getAllCategories } from "../api";
-import Preloader from "../components/Preloader";
-import CategoryList from "../components/categoryList";
+import React from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { getAllCategories } from '../api';
+import Preloader from '../components/Preloader';
+import CategoryList from '../components/CategoryList';
 function Home() {
   const [catalog, setCatalog] = useState([]);
   const [loading, setLoading] = useState(true);

@@ -1,8 +1,8 @@
-import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { getMileById } from "../api";
-import "./recept.css";
-import Button from "../components/Button";
+import Button from '../components/Button';
+import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { getMileById } from '../api';
+import './recept.css';
 
 const Recept = () => {
   const { id } = useParams();
@@ -19,7 +19,7 @@ const Recept = () => {
 
   return (
     <div className="recept">
-        <Button/>
+      <Button />
       <img src={recept.strMealThumb} alt={recept.strArea} />
       <h1> {recept.strArea}</h1>
       <h2>{recept.strCategory}</h2>
@@ -29,7 +29,7 @@ const Recept = () => {
           width="860"
           height="315"
           src={`https://www.youtube.com/embed/${recept.strYoutube.slice(
-            recept.strYoutube.indexOf("v=") + 2
+            recept.strYoutube.indexOf('v=') + 2
           )}`}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -45,7 +45,7 @@ const Recept = () => {
         </thead>
         <tbody>
           {Object.keys(recept).map((key) => {
-            if (key.includes("Ingredient") && recept[key]) {
+            if (key.includes('Ingredient') && recept[key]) {
               return (
                 <tr key={key}>
                   <td>{recept[key]}</td>
