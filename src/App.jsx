@@ -13,8 +13,9 @@ function App() {
       <Router>
         <Header />
         <main className="container">
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
+          <Routes basename='/React-meals'>
+
+            <Route path="/React-meals" element={<Home />}></Route>
             <Route path="/category/:name" element={<CategoryPage />}></Route>
             <Route path="/recept/:id" element={<Recept />}></Route>
             <Route path="/random/" element={<RandomPage />}></Route>

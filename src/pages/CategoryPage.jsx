@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { getCategorysByName } from "../api";
 import ProductList from "../components/ProductList";
 import Preloader from "../components/Preloader";
-import Button from "../components/Button";
 
 const CategoryPage = () => {
   const { name } = useParams();
@@ -25,12 +24,7 @@ const CategoryPage = () => {
     })();
   }, [name]);
 
-  return (
-    <>
-      {/* <Button /> */}
-      {loading ? <Preloader /> : <ProductList products={products} />}
-    </>
-  );
+  return <>{loading ? <Preloader /> : <ProductList products={products} />}</>;
 };
 
 export default CategoryPage;
